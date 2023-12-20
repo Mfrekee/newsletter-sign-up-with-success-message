@@ -1,0 +1,262 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  color: hsl(234, 29%, 20%);
+}
+
+label {
+  font-weight: 800;
+}
+
+input {
+  width: 100%;
+  height: 3rem;
+  border-radius: 8px;
+}
+
+button {
+  border-radius: 8px;
+  padding: 1rem 0;
+  background-color: hsl(234, 29%, 20%);
+  width: 100%;
+  color: white;
+  font-size: 1rem;
+}
+
+.mobile-image {
+  width: 100%;
+}
+
+.benefits p {
+  display: flex;
+}
+
+.benefits img {
+  margin-right: 0.8rem;
+}
+
+.error-text {
+  display: flex;
+  justify-content: space-between;
+}
+
+.error-message {
+  color: red;
+  font-weight: 800;
+  display: none;
+}
+
+.popup {
+  display: none;
+  position: absolute;
+  background-color: white;
+  left: 0;
+  top: 0;
+}
+
+.popup-text {
+  margin-left: 1.5rem;
+}
+
+.popup img {
+  margin: 0.5rem 1.5rem;
+}
+
+.close {
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 47vh;
+  width: 95%;
+}
+
+.desktop-image {
+  display: none;
+}
+
+.attribution {
+  font-size: 0.79rem;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+.attribution a:hover {
+  color: red;
+}
+
+@media (min-width: 700px) {
+  body {
+    background-color: hsl(235, 18%, 26%);
+    margin: 10vh;
+  }
+
+  section {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 17px;
+  }
+
+  h1 {
+    text-align: center;
+    font-size: 2rem;
+  }
+
+  .mobile-image {
+    border-radius: 5%;
+  }
+
+  .popup {
+    margin: 10vh;
+    justify-content: center;
+    padding: 2rem 2rem 0.5rem;
+    border-radius: 17px;
+    position: absolute;
+    width: 70%;
+    transform: translate(-0%, -10%);
+  }
+
+  .close {
+    margin-top: 65vh;
+  }
+
+  .attribution {
+    color: white;
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    margin: 25vh 5rem 0;
+    background-color: hsl(235, 18%, 26%);
+  }
+
+  section {
+    display: flex;
+    background-color: white;
+    justify-content: space-between;
+    padding: 2rem;
+    border-radius: 4%;
+  }
+
+  h1 {
+    font-size: 3.5rem;
+  }
+
+  input {
+    width: 90%;
+  }
+
+  input:active {
+    cursor: pointer;
+  }
+
+  button {
+    width: 90%;
+  }
+
+  button:active{
+    background: linear-gradient(to right, rgb(255, 80, 109),80%, rgb(255, 196, 86));
+    cursor: pointer;
+  }
+
+  .text-div {
+    margin-left: 1rem;
+  }
+
+  .mobile-image {
+    display: none;
+  }
+
+  .popup {
+    width: 38%;
+    position: static;
+    background-color: white;
+    padding: 4rem;
+    margin-left: 20vw;
+    border-radius: 8%;
+  }
+
+  .desktop-image {
+    display: block;
+    width: 48%;
+  }
+
+  .close {
+    margin-top: 0;
+  }
+}
+
+@media (min-width: 1440px) {
+  body {
+    margin: 30vh 10.8rem;
+    font-size: 1.5rem;
+  }
+
+  input{
+    padding: 0.5rem;
+    border: solid;
+    width: 85%;
+    font-size: 1.5rem;
+  }
+
+  input::placeholder {
+    font-size: 1.5rem;
+  }
+
+  button {
+    padding: 1rem;
+    font-size: 1.5rem;
+  }
+
+  .desktop-image {
+    width: 60%;
+    margin-left: 2rem;
+  }
+
+  .popup {
+    margin-left: 17vw;
+    width: 45%;
+  }
+}
+
+@media (min-width: 1920px) {
+  body {
+    margin: 30vh 4rem;
+    font-size: 3rem;
+  }
+
+  input{
+    padding: 3.5rem;
+    border: 8px solid;
+    border-radius: 25px;
+    width: 75%;
+  }
+
+  input::placeholder {
+    font-size: 3rem;
+  }
+
+  h1 {
+    font-size: 7rem;
+  }
+
+  button {
+    padding: 3rem;
+    font-size: 2.4rem;
+    border-radius: 17px;
+  }
+
+  .desktop-image {
+    width: 80%;
+    margin-left: 2rem;
+  }
+
+  .benefits img {
+    width: 8%;
+  }
+
+  .popup {
+    width: 60%;
+  }
+}

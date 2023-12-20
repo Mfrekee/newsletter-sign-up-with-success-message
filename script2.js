@@ -52,7 +52,7 @@ form.addEventListener('submit', function(event) {
   if (validateEmail(emails)) {
     console.log("Email is valid", emails);
   } else {
-    console.log("Email is invalid");
+    //console.log("Email is invalid");
   }
 });
 

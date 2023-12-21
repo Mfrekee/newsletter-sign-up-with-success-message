@@ -5,12 +5,12 @@ const express = require('express');
 const cors = require('cors')
 
 const app = express();
-const port = 5500;
+// const port = 5500;
 
 app.use(cors());
 app.use(express.json());
 
-app.post('/submit-email', (req, res) => {
+app.post('/newsletter-sign-up-with-success-message-main', (req, res) => {
   const email = req.body.emails;
 
   // Process the email address here
@@ -27,6 +27,6 @@ app.get('/submit-email', (req, res) => {
   
 });
 
-app.listen(port, () => {
-  console.log(`Server is running on port ${port}`);
-});
+// app.listen(port, () => {
+//   console.log(`Server is running on port ${port}`);
+// });

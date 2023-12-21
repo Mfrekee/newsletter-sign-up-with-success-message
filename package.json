@@ -28,7 +28,8 @@
     "function-bind": "^1.1.1",
     "get-intrinsic": "^1.2.1",
     "has": "^1.0.3",
-    "has-proto": "^1.0.1"
+    "has-proto": "^1.0.1",
+    "localtunnel": "^2.0.2"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

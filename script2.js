@@ -58,7 +58,7 @@ form.addEventListener('submit', function(event) {
 
 button.addEventListener("click", function(event) {
   emails = emailInput.value;
-  fetch('https://mfrekee.github.io/newsletter-sign-up-with-success-message-main', {  // Modify the URL here
+  fetch('https://little-loops-hide.loca.lt/', {  // Modify the URL here
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'

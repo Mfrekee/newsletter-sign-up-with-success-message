@@ -34,16 +34,18 @@ app.listen(port, () => {
 
 
 (async () => {
-  const tunnel = localtunnel(port, (err, tunnel) => {
-    if (err) {
-      console.error('Error creating tunnel:', err);
-    } else {
-      console.log('Tunnel URL:', tunnel.url);
-    }
-  });
-  // tunnel.on('close', () => {
-  //    console.log('Tunnel closed'); // tunnels are closed
+
+  const tunnel = await localtunnel({ port: 8000 });
+  // const tunnel = localtunnel(port, (err, tunnel) => {
+  //   if (err) {
+  //     console.error('Error creating tunnel:', err);
+  //   } else {
+  //     console.log('Tunnel URL:', tunnel.url);
+  //   }
   // });
+  tunnel.on('close', () => {
+     console.log('Tunnel closed'); // tunnels are closed
+  });
   // tunnel.on('error', (err) => {
   //   console.error('Tunnel error:', err);
   // })

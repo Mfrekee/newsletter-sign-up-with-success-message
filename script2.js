@@ -58,7 +58,7 @@ form.addEventListener('submit', function(event) {
 
 button.addEventListener("click", function(event) {
   emails = emailInput.value;
-  fetch('https://curly-emus-lose.loca.lt', {  // Modify the URL here
+  fetch('https://lemon-wasps-push.loca.lt', {  // Modify the URL here
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'

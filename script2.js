@@ -58,10 +58,11 @@ form.addEventListener('submit', function(event) {
 
 button.addEventListener("click", function(event) {
   emails = emailInput.value;
-  fetch('https://polite-dolls-tell.loca.lt', {  // Modify the URL here
+  fetch('https://stale-ghosts-hang.loca.lt', {  // Modify the URL here
     method: 'POST',
     headers: {
-      'Content-Type': 'application/json'
+      'Content-Type': 'application/json',
+      'Bypass-Tunnel-Reminder': 'true'
     },
     body: JSON.stringify({ emails })
   })

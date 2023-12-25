@@ -6,7 +6,7 @@ const cors = require('cors')
 const localtunnel = require('localtunnel');
 
 const app = express();
-const port = 8000;
+const port = 4000;
 
 app.use(cors());
 app.use(express.json());
@@ -35,7 +35,7 @@ app.listen(port, () => {
 
 (async () => {
 
-  const tunnel = await localtunnel({ port: 8000 });
+  const tunnel = await localtunnel({ port: 4000 });
   // const tunnel = localtunnel(port, (err, tunnel) => {
   //   if (err) {
   //     console.error('Error creating tunnel:', err);

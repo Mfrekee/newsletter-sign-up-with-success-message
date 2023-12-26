@@ -1,6 +1,7 @@
 body {
   font-family: 'Roboto', sans-serif;
   color: hsl(234, 29%, 20%);
+
 }
 
 label {
@@ -73,7 +74,6 @@ button {
 }
 
 .attribution {
-  font-size: 0.79rem;
   text-align: center;
 }
 
@@ -89,12 +89,12 @@ button {
   body {
     background-color: hsl(235, 18%, 26%);
     margin: 10vh;
-  }
-
-  section {
-    background-color: white;
-    padding: 2rem;
-    border-radius: 17px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 1dvh;
+    width: 80dvw;
   }
 
   h1 {
@@ -102,6 +102,11 @@ button {
     font-size: 2rem;
   }
 
+ .body-div {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 17px;
+  }
   .mobile-image {
     border-radius: 5%;
   }
@@ -131,14 +136,6 @@ button {
     background-color: hsl(235, 18%, 26%);
   }
 
-  section {
-    display: flex;
-    background-color: white;
-    justify-content: space-between;
-    padding: 2rem;
-    border-radius: 4%;
-  }
-
   h1 {
     font-size: 3.5rem;
   }
@@ -158,6 +155,14 @@ button {
   button:active{
     background: linear-gradient(to right, rgb(255, 80, 109),80%, rgb(255, 196, 86));
     cursor: pointer;
+  }
+
+  .body-div {
+    display: flex;
+    background-color: white;
+    justify-content: space-between;
+    padding: 2rem;
+    border-radius: 4%;
   }
 
   .text-div {
@@ -222,7 +227,7 @@ button {
 
 @media (min-width: 1920px) {
   body {
-    margin: 30vh 4rem;
+    /* margin: 30vh 4rem; */
     font-size: 3rem;
   }
 

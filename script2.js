@@ -8,13 +8,7 @@ const s3 = document.querySelector(".s3").textContent;
 
 close.addEventListener("click", function() {
   popup.style.display = "none";
-
-  if (window.innerWidth < 1024) {
-    section.style.display = "block";
-  }
-  if (window.innerWidth >= 1024) {
-    section.style.display = "flex";
-  }
+  section.style.display = "block";
 });
 
 const button = document.getElementById("myButton");
